@@ -81,10 +81,9 @@ import recipes from '../data/recipes.json';
   main {
     display: flex;
     flex-direction: column;
-    height: 100svh;
     padding: 1.5rem;
+    padding-bottom: 5rem;
     gap: 1.5rem;
-    box-sizing: border-box;
   }
 
   .grid {
@@ -109,11 +108,14 @@ import recipes from '../data/recipes.json';
   }
 
   .bottom {
+    position: fixed;
+    bottom: 1.5rem;
+    left: 1.5rem;
+    right: 1.5rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
     gap: 1rem;
-    margin-top: auto;
   }
 
   button {
