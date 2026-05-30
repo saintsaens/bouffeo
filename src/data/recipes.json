@@ -64,5 +64,118 @@
       "Reduce heat and simmer 20 min until lentils are soft.",
       "Blend half the soup for a creamy texture, then stir back in. Adjust seasoning."
     ]
+  },
+  {
+    "slug": "chicken-stir-fry",
+    "title": "Chicken Stir-Fry",
+    "duration": "25 min",
+    "servings": 2,
+    "tags": ["quick", "asian"],
+    "ingredients": [
+      { "amount": "300g", "name": "chicken breast" },
+      { "amount": "1", "name": "bell pepper" },
+      { "amount": "1", "name": "courgette" },
+      { "amount": "2 cloves", "name": "garlic" },
+      { "amount": "1 tbsp", "name": "soy sauce" },
+      { "amount": "1 tsp", "name": "sesame oil" },
+      { "amount": "1 tsp", "name": "fresh ginger" },
+      { "amount": "1 tbsp", "name": "vegetable oil" }
+    ],
+    "steps": [
+      "Slice chicken into thin strips and mince garlic and ginger.",
+      "Cut pepper and courgette into thin strips.",
+      "Heat oil in a wok over high heat until smoking.",
+      "Cook chicken 4–5 min until golden, then set aside.",
+      "Stir-fry vegetables 3 min, add garlic and ginger for 30 seconds.",
+      "Return chicken, add soy sauce and sesame oil, toss everything together and serve."
+    ]
+  },
+  {
+    "slug": "tomato-bruschetta",
+    "title": "Tomato Bruschetta",
+    "duration": "15 min",
+    "servings": 2,
+    "tags": ["starter", "quick"],
+    "ingredients": [
+      { "amount": "4 slices", "name": "ciabatta or baguette" },
+      { "amount": "3", "name": "ripe tomatoes" },
+      { "amount": "1 clove", "name": "garlic" },
+      { "amount": "handful", "name": "fresh basil" },
+      { "amount": "2 tbsp", "name": "olive oil" },
+      { "amount": "to taste", "name": "salt & pepper" }
+    ],
+    "steps": [
+      "Dice tomatoes and combine with torn basil, olive oil, salt, and pepper. Let sit 10 min.",
+      "Toast or grill the bread slices until charred at the edges.",
+      "Rub each slice with the cut side of a garlic clove.",
+      "Spoon the tomato mixture generously over each slice and serve immediately."
+    ]
+  },
+  {
+    "slug": "mushroom-risotto",
+    "title": "Mushroom Risotto",
+    "duration": "40 min",
+    "servings": 2,
+    "tags": ["vegetarian", "comfort"],
+    "ingredients": [
+      { "amount": "160g", "name": "arborio rice" },
+      { "amount": "250g", "name": "mushrooms" },
+      { "amount": "1", "name": "shallot" },
+      { "amount": "1 clove", "name": "garlic" },
+      { "amount": "100ml", "name": "white wine" },
+      { "amount": "700ml", "name": "warm vegetable stock" },
+      { "amount": "40g", "name": "parmesan" },
+      { "amount": "1 tbsp", "name": "butter" }
+    ],
+    "steps": [
+      "Slice mushrooms and finely chop shallot and garlic.",
+      "Sauté mushrooms in butter until golden, set aside.",
+      "In the same pan, soften shallot and garlic, then add rice and toast 1 min.",
+      "Add wine and stir until absorbed.",
+      "Add stock one ladle at a time, stirring constantly, until each addition is absorbed — about 18 min.",
+      "Stir in mushrooms and parmesan, season, and rest 2 min before serving."
+    ]
+  },
+  {
+    "slug": "greek-salad",
+    "title": "Greek Salad",
+    "duration": "10 min",
+    "servings": 2,
+    "tags": ["salad", "quick"],
+    "ingredients": [
+      { "amount": "3", "name": "tomatoes" },
+      { "amount": "1", "name": "cucumber" },
+      { "amount": "1/2", "name": "red onion" },
+      { "amount": "100g", "name": "feta cheese" },
+      { "amount": "handful", "name": "kalamata olives" },
+      { "amount": "3 tbsp", "name": "olive oil" },
+      { "amount": "1 tsp", "name": "dried oregano" }
+    ],
+    "steps": [
+      "Chop tomatoes and cucumber into chunks, slice red onion thinly.",
+      "Combine in a bowl with olives.",
+      "Drizzle with olive oil, sprinkle oregano, and season with salt.",
+      "Place feta block on top (or crumble over) and serve."
+    ]
+  },
+  {
+    "slug": "banana-pancakes",
+    "title": "Banana Pancakes",
+    "duration": "15 min",
+    "servings": 2,
+    "tags": ["breakfast", "quick"],
+    "ingredients": [
+      { "amount": "2", "name": "ripe bananas" },
+      { "amount": "2", "name": "eggs" },
+      { "amount": "pinch", "name": "cinnamon" },
+      { "amount": "1 tsp", "name": "butter" }
+    ],
+    "steps": [
+      "Mash bananas thoroughly in a bowl.",
+      "Beat in eggs and cinnamon until smooth.",
+      "Melt butter in a non-stick pan over medium heat.",
+      "Pour small rounds of batter and cook 2 min per side until golden.",
+      "Serve with honey, fruit, or yoghurt."
+    ]
   }
 ]
