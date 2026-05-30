@@ -4,33 +4,22 @@
     "title": "Tartiflette",
     "servings": 4,
     "ingredients": [
-      {
-        "amount": "200g",
-        "name": "spaghetti"
-      },
-      {
-        "amount": "100g",
-        "name": "pancetta"
-      },
-      {
-        "amount": "2",
-        "name": "eggs"
-      },
-      {
-        "amount": "50g",
-        "name": "parmesan"
-      },
-      {
-        "amount": "to taste",
-        "name": "black pepper"
-      }
+      { "amount": "1.2kg", "name": "waxy potatoes" },
+      { "amount": "1", "name": "reblochon cheese (450g)" },
+      { "amount": "200g", "name": "lardons (smoked bacon)" },
+      { "amount": "2", "name": "onions" },
+      { "amount": "150ml", "name": "dry white wine" },
+      { "amount": "1 clove", "name": "garlic" },
+      { "amount": "1 tbsp", "name": "butter" },
+      { "amount": "to taste", "name": "salt & pepper" }
     ],
     "steps": [
-      "Cook spaghetti in salted boiling water until al dente.",
-      "Fry pancetta in a dry pan until crispy, then remove from heat.",
-      "Beat eggs with grated parmesan and a generous pinch of black pepper.",
-      "Drain pasta, reserving a cup of pasta water.",
-      "Add hot pasta to the pan with pancetta (off heat). Pour egg mixture over and toss quickly, adding a splash of pasta water to make it creamy."
+      "Peel and slice potatoes into 5mm rounds. Boil in salted water for 10 min until just tender, then drain.",
+      "Preheat oven to 190°C. Rub a gratin dish with the cut garlic clove, then butter it.",
+      "Fry lardons in a dry pan until golden. Add sliced onions and cook 8 min until soft. Pour in wine and let it reduce by half.",
+      "Layer half the potatoes in the dish, season, then spread the lardon and onion mixture over. Top with remaining potatoes.",
+      "Cut reblochon in half horizontally and lay both halves rind-side up over the potatoes.",
+      "Bake 25 min until the cheese is bubbling and golden. Rest 5 min before serving."
     ]
   },
   {
