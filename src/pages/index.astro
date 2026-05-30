@@ -22,35 +22,59 @@ import recipes from '../data/recipes.json';
   let count = 1;
   let picked = [];
 
-  function pickUnique(n) {
-    const pool = [...recipes];
-    const result = [];
-    for (let i = 0; i < Math.min(n, pool.length); i++) {
-      const idx = Math.floor(Math.random() * pool.length);
-      result.push(pool.splice(idx, 1)[0]);
-    }
-    return result;
+  function pickOne(exclude) {
+    const pool = recipes.filter(r => !exclude.includes(r.slug));
+    if (!pool.length) return recipes[Math.floor(Math.random() * recipes.length)];
+    return pool[Math.floor(Math.random() * pool.length)];
   }
 
-  function render() {
-    picked = pickUnique(count);
-    gridEl.innerHTML = '';
+  function makeTile(r) {
+    const a = document.createElement('a');
+    a.className = 'tile';
+    a.href = `/recipes/${r.slug}`;
+    a.textContent = r.title;
+    return a;
+  }
+
+  function setGrid() {
     gridEl.style.gridTemplateColumns = count === 1 ? '1fr' : '1fr 1fr';
-    picked.forEach(r => {
-      const a = document.createElement('a');
-      a.className = 'tile';
-      a.href = `/recipes/${r.slug}`;
-      a.textContent = r.title;
-      gridEl.appendChild(a);
-    });
     countEl.textContent = count;
   }
 
-  document.getElementById('reroll').addEventListener('click', render);
-  document.getElementById('prev').addEventListener('click', () => { if (count > 1) { count--; render(); } });
-  document.getElementById('next').addEventListener('click', () => { if (count < 4) { count++; render(); } });
+  function reroll() {
+    picked = [];
+    for (let i = 0; i < count; i++) {
+      const r = pickOne(picked.map(p => p.slug));
+      picked.push(r);
+    }
+    gridEl.innerHTML = '';
+    picked.forEach(r => gridEl.appendChild(makeTile(r)));
+    setGrid();
+  }
 
-  render();
+  function setCount(n) {
+    const prev = count;
+    count = n;
+    if (count > prev) {
+      for (let i = prev; i < count; i++) {
+        const r = pickOne(picked.map(p => p.slug));
+        picked.push(r);
+        gridEl.appendChild(makeTile(r));
+      }
+    } else {
+      for (let i = prev; i > count; i--) {
+        picked.pop();
+        gridEl.removeChild(gridEl.lastChild);
+      }
+    }
+    setGrid();
+  }
+
+  document.getElementById('reroll').addEventListener('click', reroll);
+  document.getElementById('prev').addEventListener('click', () => { if (count > 1) setCount(count - 1); });
+  document.getElementById('next').addEventListener('click', () => { if (count < 4) setCount(count + 1); });
+
+  reroll();
 </script>
 
 <style>
