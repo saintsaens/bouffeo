@@ -4,21 +4,21 @@
     "title": "Pâtes Poivron Poulet",
     "servings": 4,
     "ingredients": [
-      { "amount": "1.2kg", "name": "pommes de terre à chair ferme" },
-      { "amount": "1", "name": "reblochon (450g)" },
-      { "amount": "200g", "name": "lardons" },
-      { "amount": "2", "name": "oignons" },
-      { "amount": "150ml", "name": "vin blanc sec" },
-      { "amount": "1 gousse", "name": "ail" },
-      { "amount": "1 c. à soupe", "name": "beurre" }
+      { "amount": "400g", "name": "pâtes (penne ou fusilli)" },
+      { "amount": "2", "name": "filets de poulet" },
+      { "amount": "2", "name": "poivrons (rouge et jaune)" },
+      { "amount": "1", "name": "oignon" },
+      { "amount": "2 gousses", "name": "ail" },
+      { "amount": "200ml", "name": "crème fraîche" },
+      { "amount": "1 c. à soupe", "name": "huile d'olive" },
+      { "amount": "à goût", "name": "sel, poivre & paprika" }
     ],
     "steps": [
-      "Éplucher et couper les pommes de terre en rondelles de 5mm. Les faire cuire 10 min dans de l'eau salée jusqu'à ce qu'elles soient juste tendres, puis égoutter.",
-      "Préchauffer le four à 190°C. Frotter un plat à gratin avec la gousse d'ail coupée, puis le beurrer.",
-      "Faire revenir les lardons à sec jusqu'à ce qu'ils soient dorés. Ajouter les oignons émincés et cuire 8 min. Verser le vin blanc et laisser réduire de moitié.",
-      "Disposer la moitié des pommes de terre dans le plat, assaisonner, puis répartir les lardons et oignons. Couvrir avec le reste des pommes de terre.",
-      "Couper le reblochon en deux dans l'épaisseur et le poser croûte vers le haut sur les pommes de terre.",
-      "Enfourner 25 min jusqu'à ce que le fromage soit bien doré et bouillonnant. Laisser reposer 5 min avant de servir."
+      "Couper le poulet en lanières, les poivrons en lamelles, l'oignon en demi-rondelles.",
+      "Faire dorer le poulet dans l'huile d'olive 5 min, saler, poivrer, réserver.",
+      "Dans la même poêle, faire revenir l'oignon, l'ail et les poivrons 8 min. Cuire les pâtes en parallèle.",
+      "Remettre le poulet, verser la crème fraîche, saupoudrer de paprika. Laisser mijoter 3 min.",
+      "Égoutter les pâtes, les incorporer à la sauce et servir."
     ]
   },
   {
