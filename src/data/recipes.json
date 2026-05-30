@@ -2,7 +2,6 @@
   {
     "slug": "tartiflette",
     "title": "Tartiflette",
-    "duration": "30 min",
     "servings": 4,
     "ingredients": [
       {
@@ -37,7 +36,6 @@
   {
     "slug": "pasta-carbonara",
     "title": "Pasta Carbonara",
-    "duration": "20 min",
     "servings": 2,
     "ingredients": [
       {
@@ -72,7 +70,6 @@
   {
     "slug": "avocado-toast",
     "title": "Avocado Toast",
-    "duration": "10 min",
     "servings": 1,
     "ingredients": [
       {
@@ -107,7 +104,6 @@
   {
     "slug": "lentil-soup",
     "title": "Red Lentil Soup",
-    "duration": "35 min",
     "servings": 4,
     "ingredients": [
       {
@@ -154,7 +150,6 @@
   {
     "slug": "chicken-stir-fry",
     "title": "Chicken Stir-Fry",
-    "duration": "25 min",
     "servings": 2,
     "ingredients": [
       {
@@ -202,7 +197,6 @@
   {
     "slug": "tomato-bruschetta",
     "title": "Tomato Bruschetta",
-    "duration": "15 min",
     "servings": 2,
     "ingredients": [
       {
@@ -240,7 +234,6 @@
   {
     "slug": "mushroom-risotto",
     "title": "Mushroom Risotto",
-    "duration": "40 min",
     "servings": 2,
     "ingredients": [
       {
@@ -288,7 +281,6 @@
   {
     "slug": "greek-salad",
     "title": "Greek Salad",
-    "duration": "10 min",
     "servings": 2,
     "ingredients": [
       {
@@ -330,7 +322,6 @@
   {
     "slug": "banana-pancakes",
     "title": "Banana Pancakes",
-    "duration": "15 min",
     "servings": 2,
     "ingredients": [
       {
