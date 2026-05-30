@@ -1,16 +1,65 @@
 [
   {
+    "slug": "tartiflette",
+    "title": "Tartiflette",
+    "duration": "30 min",
+    "servings": 4,
+    "ingredients": [
+      {
+        "amount": "200g",
+        "name": "spaghetti"
+      },
+      {
+        "amount": "100g",
+        "name": "pancetta"
+      },
+      {
+        "amount": "2",
+        "name": "eggs"
+      },
+      {
+        "amount": "50g",
+        "name": "parmesan"
+      },
+      {
+        "amount": "to taste",
+        "name": "black pepper"
+      }
+    ],
+    "steps": [
+      "Cook spaghetti in salted boiling water until al dente.",
+      "Fry pancetta in a dry pan until crispy, then remove from heat.",
+      "Beat eggs with grated parmesan and a generous pinch of black pepper.",
+      "Drain pasta, reserving a cup of pasta water.",
+      "Add hot pasta to the pan with pancetta (off heat). Pour egg mixture over and toss quickly, adding a splash of pasta water to make it creamy."
+    ]
+  },
+  {
     "slug": "pasta-carbonara",
     "title": "Pasta Carbonara",
     "duration": "20 min",
     "servings": 2,
-    "tags": ["pasta", "quick"],
     "ingredients": [
-      { "amount": "200g", "name": "spaghetti" },
-      { "amount": "100g", "name": "pancetta" },
-      { "amount": "2", "name": "eggs" },
-      { "amount": "50g", "name": "parmesan" },
-      { "amount": "to taste", "name": "black pepper" }
+      {
+        "amount": "200g",
+        "name": "spaghetti"
+      },
+      {
+        "amount": "100g",
+        "name": "pancetta"
+      },
+      {
+        "amount": "2",
+        "name": "eggs"
+      },
+      {
+        "amount": "50g",
+        "name": "parmesan"
+      },
+      {
+        "amount": "to taste",
+        "name": "black pepper"
+      }
     ],
     "steps": [
       "Cook spaghetti in salted boiling water until al dente.",
@@ -25,13 +74,27 @@
     "title": "Avocado Toast",
     "duration": "10 min",
     "servings": 1,
-    "tags": ["breakfast", "quick"],
     "ingredients": [
-      { "amount": "2 slices", "name": "sourdough bread" },
-      { "amount": "1", "name": "ripe avocado" },
-      { "amount": "1", "name": "lemon" },
-      { "amount": "to taste", "name": "salt & chili flakes" },
-      { "amount": "2", "name": "eggs (optional, poached)" }
+      {
+        "amount": "2 slices",
+        "name": "sourdough bread"
+      },
+      {
+        "amount": "1",
+        "name": "ripe avocado"
+      },
+      {
+        "amount": "1",
+        "name": "lemon"
+      },
+      {
+        "amount": "to taste",
+        "name": "salt & chili flakes"
+      },
+      {
+        "amount": "2",
+        "name": "eggs (optional, poached)"
+      }
     ],
     "steps": [
       "Toast the bread until golden and crispy.",
@@ -46,16 +109,39 @@
     "title": "Red Lentil Soup",
     "duration": "35 min",
     "servings": 4,
-    "tags": ["soup", "vegetarian"],
     "ingredients": [
-      { "amount": "250g", "name": "red lentils" },
-      { "amount": "1", "name": "onion" },
-      { "amount": "2 cloves", "name": "garlic" },
-      { "amount": "1 tsp", "name": "cumin" },
-      { "amount": "1 tsp", "name": "turmeric" },
-      { "amount": "400g", "name": "canned tomatoes" },
-      { "amount": "1L", "name": "vegetable stock" },
-      { "amount": "1 tbsp", "name": "olive oil" }
+      {
+        "amount": "250g",
+        "name": "red lentils"
+      },
+      {
+        "amount": "1",
+        "name": "onion"
+      },
+      {
+        "amount": "2 cloves",
+        "name": "garlic"
+      },
+      {
+        "amount": "1 tsp",
+        "name": "cumin"
+      },
+      {
+        "amount": "1 tsp",
+        "name": "turmeric"
+      },
+      {
+        "amount": "400g",
+        "name": "canned tomatoes"
+      },
+      {
+        "amount": "1L",
+        "name": "vegetable stock"
+      },
+      {
+        "amount": "1 tbsp",
+        "name": "olive oil"
+      }
     ],
     "steps": [
       "Dice onion and mince garlic.",
@@ -70,16 +156,39 @@
     "title": "Chicken Stir-Fry",
     "duration": "25 min",
     "servings": 2,
-    "tags": ["quick", "asian"],
     "ingredients": [
-      { "amount": "300g", "name": "chicken breast" },
-      { "amount": "1", "name": "bell pepper" },
-      { "amount": "1", "name": "courgette" },
-      { "amount": "2 cloves", "name": "garlic" },
-      { "amount": "1 tbsp", "name": "soy sauce" },
-      { "amount": "1 tsp", "name": "sesame oil" },
-      { "amount": "1 tsp", "name": "fresh ginger" },
-      { "amount": "1 tbsp", "name": "vegetable oil" }
+      {
+        "amount": "300g",
+        "name": "chicken breast"
+      },
+      {
+        "amount": "1",
+        "name": "bell pepper"
+      },
+      {
+        "amount": "1",
+        "name": "courgette"
+      },
+      {
+        "amount": "2 cloves",
+        "name": "garlic"
+      },
+      {
+        "amount": "1 tbsp",
+        "name": "soy sauce"
+      },
+      {
+        "amount": "1 tsp",
+        "name": "sesame oil"
+      },
+      {
+        "amount": "1 tsp",
+        "name": "fresh ginger"
+      },
+      {
+        "amount": "1 tbsp",
+        "name": "vegetable oil"
+      }
     ],
     "steps": [
       "Slice chicken into thin strips and mince garlic and ginger.",
@@ -95,14 +204,31 @@
     "title": "Tomato Bruschetta",
     "duration": "15 min",
     "servings": 2,
-    "tags": ["starter", "quick"],
     "ingredients": [
-      { "amount": "4 slices", "name": "ciabatta or baguette" },
-      { "amount": "3", "name": "ripe tomatoes" },
-      { "amount": "1 clove", "name": "garlic" },
-      { "amount": "handful", "name": "fresh basil" },
-      { "amount": "2 tbsp", "name": "olive oil" },
-      { "amount": "to taste", "name": "salt & pepper" }
+      {
+        "amount": "4 slices",
+        "name": "ciabatta or baguette"
+      },
+      {
+        "amount": "3",
+        "name": "ripe tomatoes"
+      },
+      {
+        "amount": "1 clove",
+        "name": "garlic"
+      },
+      {
+        "amount": "handful",
+        "name": "fresh basil"
+      },
+      {
+        "amount": "2 tbsp",
+        "name": "olive oil"
+      },
+      {
+        "amount": "to taste",
+        "name": "salt & pepper"
+      }
     ],
     "steps": [
       "Dice tomatoes and combine with torn basil, olive oil, salt, and pepper. Let sit 10 min.",
@@ -116,16 +242,39 @@
     "title": "Mushroom Risotto",
     "duration": "40 min",
     "servings": 2,
-    "tags": ["vegetarian", "comfort"],
     "ingredients": [
-      { "amount": "160g", "name": "arborio rice" },
-      { "amount": "250g", "name": "mushrooms" },
-      { "amount": "1", "name": "shallot" },
-      { "amount": "1 clove", "name": "garlic" },
-      { "amount": "100ml", "name": "white wine" },
-      { "amount": "700ml", "name": "warm vegetable stock" },
-      { "amount": "40g", "name": "parmesan" },
-      { "amount": "1 tbsp", "name": "butter" }
+      {
+        "amount": "160g",
+        "name": "arborio rice"
+      },
+      {
+        "amount": "250g",
+        "name": "mushrooms"
+      },
+      {
+        "amount": "1",
+        "name": "shallot"
+      },
+      {
+        "amount": "1 clove",
+        "name": "garlic"
+      },
+      {
+        "amount": "100ml",
+        "name": "white wine"
+      },
+      {
+        "amount": "700ml",
+        "name": "warm vegetable stock"
+      },
+      {
+        "amount": "40g",
+        "name": "parmesan"
+      },
+      {
+        "amount": "1 tbsp",
+        "name": "butter"
+      }
     ],
     "steps": [
       "Slice mushrooms and finely chop shallot and garlic.",
@@ -141,15 +290,35 @@
     "title": "Greek Salad",
     "duration": "10 min",
     "servings": 2,
-    "tags": ["salad", "quick"],
     "ingredients": [
-      { "amount": "3", "name": "tomatoes" },
-      { "amount": "1", "name": "cucumber" },
-      { "amount": "1/2", "name": "red onion" },
-      { "amount": "100g", "name": "feta cheese" },
-      { "amount": "handful", "name": "kalamata olives" },
-      { "amount": "3 tbsp", "name": "olive oil" },
-      { "amount": "1 tsp", "name": "dried oregano" }
+      {
+        "amount": "3",
+        "name": "tomatoes"
+      },
+      {
+        "amount": "1",
+        "name": "cucumber"
+      },
+      {
+        "amount": "1/2",
+        "name": "red onion"
+      },
+      {
+        "amount": "100g",
+        "name": "feta cheese"
+      },
+      {
+        "amount": "handful",
+        "name": "kalamata olives"
+      },
+      {
+        "amount": "3 tbsp",
+        "name": "olive oil"
+      },
+      {
+        "amount": "1 tsp",
+        "name": "dried oregano"
+      }
     ],
     "steps": [
       "Chop tomatoes and cucumber into chunks, slice red onion thinly.",
@@ -163,12 +332,23 @@
     "title": "Banana Pancakes",
     "duration": "15 min",
     "servings": 2,
-    "tags": ["breakfast", "quick"],
     "ingredients": [
-      { "amount": "2", "name": "ripe bananas" },
-      { "amount": "2", "name": "eggs" },
-      { "amount": "pinch", "name": "cinnamon" },
-      { "amount": "1 tsp", "name": "butter" }
+      {
+        "amount": "2",
+        "name": "ripe bananas"
+      },
+      {
+        "amount": "2",
+        "name": "eggs"
+      },
+      {
+        "amount": "pinch",
+        "name": "cinnamon"
+      },
+      {
+        "amount": "1 tsp",
+        "name": "butter"
+      }
     ],
     "steps": [
       "Mash bananas thoroughly in a bowl.",
