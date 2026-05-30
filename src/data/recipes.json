@@ -13,7 +13,7 @@
     ],
     "steps": [
       "Cuire le poulet dans une poêle. Réserver.",
-      "Cuire l’oignon, l’ail et les poivrons dans la poêle du poulet.",
+      "Cuire l'oignon, l'ail et les poivrons dans la poêle du poulet.",
       "Ajouter la crème, puis remettre le poulet.",
       "Cuire les pâtes.",
       "Mettre les pâtes dans la sauce."
@@ -41,319 +41,61 @@
     ]
   },
   {
-    "slug": "pasta-carbonara",
-    "title": "Pasta Carbonara",
+    "slug": "camembert-roti",
+    "title": "Camembert Rôti",
     "servings": 2,
     "ingredients": [
-      {
-        "amount": "200g",
-        "name": "spaghetti"
-      },
-      {
-        "amount": "100g",
-        "name": "pancetta"
-      },
-      {
-        "amount": "2",
-        "name": "eggs"
-      },
-      {
-        "amount": "50g",
-        "name": "parmesan"
-      },
-      {
-        "amount": "to taste",
-        "name": "black pepper"
-      }
+      { "amount": "1", "name": "camembert dans sa boîte" },
+      { "amount": "1 gousse", "name": "ail" },
+      { "amount": "quelques branches", "name": "thym frais" },
+      { "amount": "1 filet", "name": "miel" },
+      { "amount": "à volonté", "name": "pain ou pommes de terre" }
     ],
     "steps": [
-      "Cook spaghetti in salted boiling water until al dente.",
-      "Fry pancetta in a dry pan until crispy, then remove from heat.",
-      "Beat eggs with grated parmesan and a generous pinch of black pepper.",
-      "Drain pasta, reserving a cup of pasta water.",
-      "Add hot pasta to the pan with pancetta (off heat). Pour egg mixture over and toss quickly, adding a splash of pasta water to make it creamy."
+      "Préchauffer le four à 200°C.",
+      "Retirer l'emballage plastique et remettre le camembert dans sa boîte en bois.",
+      "Quadriller le dessus au couteau. Glisser des lamelles d'ail et du thym dans les entailles.",
+      "Arroser d'un filet de miel.",
+      "Enfourner 15 min jusqu'à ce que le fromage soit fondu. Servir directement avec du pain."
     ]
   },
   {
-    "slug": "avocado-toast",
-    "title": "Avocado Toast",
-    "servings": 1,
-    "ingredients": [
-      {
-        "amount": "2 slices",
-        "name": "sourdough bread"
-      },
-      {
-        "amount": "1",
-        "name": "ripe avocado"
-      },
-      {
-        "amount": "1",
-        "name": "lemon"
-      },
-      {
-        "amount": "to taste",
-        "name": "salt & chili flakes"
-      },
-      {
-        "amount": "2",
-        "name": "eggs (optional, poached)"
-      }
-    ],
-    "steps": [
-      "Toast the bread until golden and crispy.",
-      "Halve the avocado, remove the pit, and scoop into a bowl.",
-      "Mash with a fork, squeeze in lemon juice, and season with salt.",
-      "Spread avocado on toast.",
-      "Top with chili flakes and a poached egg if using."
-    ]
-  },
-  {
-    "slug": "lentil-soup",
-    "title": "Red Lentil Soup",
-    "servings": 4,
-    "ingredients": [
-      {
-        "amount": "250g",
-        "name": "red lentils"
-      },
-      {
-        "amount": "1",
-        "name": "onion"
-      },
-      {
-        "amount": "2 cloves",
-        "name": "garlic"
-      },
-      {
-        "amount": "1 tsp",
-        "name": "cumin"
-      },
-      {
-        "amount": "1 tsp",
-        "name": "turmeric"
-      },
-      {
-        "amount": "400g",
-        "name": "canned tomatoes"
-      },
-      {
-        "amount": "1L",
-        "name": "vegetable stock"
-      },
-      {
-        "amount": "1 tbsp",
-        "name": "olive oil"
-      }
-    ],
-    "steps": [
-      "Dice onion and mince garlic.",
-      "Heat olive oil in a pot, soften onion for 5 min, add garlic and spices, cook 1 min.",
-      "Add rinsed lentils, tomatoes, and stock. Bring to a boil.",
-      "Reduce heat and simmer 20 min until lentils are soft.",
-      "Blend half the soup for a creamy texture, then stir back in. Adjust seasoning."
-    ]
-  },
-  {
-    "slug": "chicken-stir-fry",
-    "title": "Chicken Stir-Fry",
+    "slug": "croque-monsieur",
+    "title": "Croque Monsieur",
     "servings": 2,
     "ingredients": [
-      {
-        "amount": "300g",
-        "name": "chicken breast"
-      },
-      {
-        "amount": "1",
-        "name": "bell pepper"
-      },
-      {
-        "amount": "1",
-        "name": "courgette"
-      },
-      {
-        "amount": "2 cloves",
-        "name": "garlic"
-      },
-      {
-        "amount": "1 tbsp",
-        "name": "soy sauce"
-      },
-      {
-        "amount": "1 tsp",
-        "name": "sesame oil"
-      },
-      {
-        "amount": "1 tsp",
-        "name": "fresh ginger"
-      },
-      {
-        "amount": "1 tbsp",
-        "name": "vegetable oil"
-      }
+      { "amount": "4 tranches", "name": "pain de mie" },
+      { "amount": "4 tranches", "name": "jambon blanc" },
+      { "amount": "100g", "name": "gruyère râpé" },
+      { "amount": "20g", "name": "beurre" },
+      { "amount": "20g", "name": "farine" },
+      { "amount": "200ml", "name": "lait" }
     ],
     "steps": [
-      "Slice chicken into thin strips and mince garlic and ginger.",
-      "Cut pepper and courgette into thin strips.",
-      "Heat oil in a wok over high heat until smoking.",
-      "Cook chicken 4–5 min until golden, then set aside.",
-      "Stir-fry vegetables 3 min, add garlic and ginger for 30 seconds.",
-      "Return chicken, add soy sauce and sesame oil, toss everything together and serve."
+      "Faire un roux : fondre le beurre, ajouter la farine, puis le lait en fouettant. Cuire 3 min jusqu'à épaississement.",
+      "Toaster légèrement les tranches de pain.",
+      "Tartiner une face de béchamel, poser le jambon, couvrir de l'autre tranche.",
+      "Napper le dessus de béchamel et parsemer de gruyère.",
+      "Passer sous le gril 5 min jusqu'à ce que le dessus soit doré et bouillonnant."
     ]
   },
   {
-    "slug": "tomato-bruschetta",
-    "title": "Tomato Bruschetta",
+    "slug": "salade-endives-betterave-comte",
+    "title": "Salade Endives Betterave Comté",
     "servings": 2,
     "ingredients": [
-      {
-        "amount": "4 slices",
-        "name": "ciabatta or baguette"
-      },
-      {
-        "amount": "3",
-        "name": "ripe tomatoes"
-      },
-      {
-        "amount": "1 clove",
-        "name": "garlic"
-      },
-      {
-        "amount": "handful",
-        "name": "fresh basil"
-      },
-      {
-        "amount": "2 tbsp",
-        "name": "olive oil"
-      },
-      {
-        "amount": "to taste",
-        "name": "salt & pepper"
-      }
+      { "amount": "2", "name": "endives" },
+      { "amount": "2", "name": "betteraves cuites" },
+      { "amount": "80g", "name": "comté" },
+      { "amount": "2 tranches", "name": "jambon de pays" },
+      { "amount": "2 c. à soupe", "name": "huile de noix" },
+      { "amount": "1 c. à soupe", "name": "vinaigre de cidre" }
     ],
     "steps": [
-      "Dice tomatoes and combine with torn basil, olive oil, salt, and pepper. Let sit 10 min.",
-      "Toast or grill the bread slices until charred at the edges.",
-      "Rub each slice with the cut side of a garlic clove.",
-      "Spoon the tomato mixture generously over each slice and serve immediately."
-    ]
-  },
-  {
-    "slug": "mushroom-risotto",
-    "title": "Mushroom Risotto",
-    "servings": 2,
-    "ingredients": [
-      {
-        "amount": "160g",
-        "name": "arborio rice"
-      },
-      {
-        "amount": "250g",
-        "name": "mushrooms"
-      },
-      {
-        "amount": "1",
-        "name": "shallot"
-      },
-      {
-        "amount": "1 clove",
-        "name": "garlic"
-      },
-      {
-        "amount": "100ml",
-        "name": "white wine"
-      },
-      {
-        "amount": "700ml",
-        "name": "warm vegetable stock"
-      },
-      {
-        "amount": "40g",
-        "name": "parmesan"
-      },
-      {
-        "amount": "1 tbsp",
-        "name": "butter"
-      }
-    ],
-    "steps": [
-      "Slice mushrooms and finely chop shallot and garlic.",
-      "Sauté mushrooms in butter until golden, set aside.",
-      "In the same pan, soften shallot and garlic, then add rice and toast 1 min.",
-      "Add wine and stir until absorbed.",
-      "Add stock one ladle at a time, stirring constantly, until each addition is absorbed — about 18 min.",
-      "Stir in mushrooms and parmesan, season, and rest 2 min before serving."
-    ]
-  },
-  {
-    "slug": "greek-salad",
-    "title": "Greek Salad",
-    "servings": 2,
-    "ingredients": [
-      {
-        "amount": "3",
-        "name": "tomatoes"
-      },
-      {
-        "amount": "1",
-        "name": "cucumber"
-      },
-      {
-        "amount": "1/2",
-        "name": "red onion"
-      },
-      {
-        "amount": "100g",
-        "name": "feta cheese"
-      },
-      {
-        "amount": "handful",
-        "name": "kalamata olives"
-      },
-      {
-        "amount": "3 tbsp",
-        "name": "olive oil"
-      },
-      {
-        "amount": "1 tsp",
-        "name": "dried oregano"
-      }
-    ],
-    "steps": [
-      "Chop tomatoes and cucumber into chunks, slice red onion thinly.",
-      "Combine in a bowl with olives.",
-      "Drizzle with olive oil, sprinkle oregano, and season with salt.",
-      "Place feta block on top (or crumble over) and serve."
-    ]
-  },
-  {
-    "slug": "banana-pancakes",
-    "title": "Banana Pancakes",
-    "servings": 2,
-    "ingredients": [
-      {
-        "amount": "2",
-        "name": "ripe bananas"
-      },
-      {
-        "amount": "2",
-        "name": "eggs"
-      },
-      {
-        "amount": "pinch",
-        "name": "cinnamon"
-      },
-      {
-        "amount": "1 tsp",
-        "name": "butter"
-      }
-    ],
-    "steps": [
-      "Mash bananas thoroughly in a bowl.",
-      "Beat in eggs and cinnamon until smooth.",
-      "Melt butter in a non-stick pan over medium heat.",
-      "Pour small rounds of batter and cook 2 min per side until golden.",
-      "Serve with honey, fruit, or yoghurt."
+      "Couper les endives en lamelles, les betteraves en dés, le comté en copeaux.",
+      "Déchirer le jambon de pays en morceaux.",
+      "Mélanger huile de noix, vinaigre, sel et poivre pour la vinaigrette.",
+      "Assembler le tout dans un saladier et arroser de vinaigrette."
     ]
   }
 ]
