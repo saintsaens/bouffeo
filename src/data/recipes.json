@@ -1,25 +1,46 @@
 [
   {
+    "slug": "pate-poivron-poulet",
+    "title": "Pâtes Poivron Poulet",
+    "servings": 4,
+    "ingredients": [
+      { "amount": "1.2kg", "name": "pommes de terre à chair ferme" },
+      { "amount": "1", "name": "reblochon (450g)" },
+      { "amount": "200g", "name": "lardons" },
+      { "amount": "2", "name": "oignons" },
+      { "amount": "150ml", "name": "vin blanc sec" },
+      { "amount": "1 gousse", "name": "ail" },
+      { "amount": "1 c. à soupe", "name": "beurre" }
+    ],
+    "steps": [
+      "Éplucher et couper les pommes de terre en rondelles de 5mm. Les faire cuire 10 min dans de l'eau salée jusqu'à ce qu'elles soient juste tendres, puis égoutter.",
+      "Préchauffer le four à 190°C. Frotter un plat à gratin avec la gousse d'ail coupée, puis le beurrer.",
+      "Faire revenir les lardons à sec jusqu'à ce qu'ils soient dorés. Ajouter les oignons émincés et cuire 8 min. Verser le vin blanc et laisser réduire de moitié.",
+      "Disposer la moitié des pommes de terre dans le plat, assaisonner, puis répartir les lardons et oignons. Couvrir avec le reste des pommes de terre.",
+      "Couper le reblochon en deux dans l'épaisseur et le poser croûte vers le haut sur les pommes de terre.",
+      "Enfourner 25 min jusqu'à ce que le fromage soit bien doré et bouillonnant. Laisser reposer 5 min avant de servir."
+    ]
+  },
+  {
     "slug": "tartiflette",
     "title": "Tartiflette",
     "servings": 4,
     "ingredients": [
-      { "amount": "1.2kg", "name": "waxy potatoes" },
-      { "amount": "1", "name": "reblochon cheese (450g)" },
-      { "amount": "200g", "name": "lardons (smoked bacon)" },
-      { "amount": "2", "name": "onions" },
-      { "amount": "150ml", "name": "dry white wine" },
-      { "amount": "1 clove", "name": "garlic" },
-      { "amount": "1 tbsp", "name": "butter" },
-      { "amount": "to taste", "name": "salt & pepper" }
+      { "amount": "1.2kg", "name": "pommes de terre à chair ferme" },
+      { "amount": "1", "name": "reblochon (450g)" },
+      { "amount": "200g", "name": "lardons" },
+      { "amount": "2", "name": "oignons" },
+      { "amount": "150ml", "name": "vin blanc sec" },
+      { "amount": "1 gousse", "name": "ail" },
+      { "amount": "1 c. à soupe", "name": "beurre" }
     ],
     "steps": [
-      "Peel and slice potatoes into 5mm rounds. Boil in salted water for 10 min until just tender, then drain.",
-      "Preheat oven to 190°C. Rub a gratin dish with the cut garlic clove, then butter it.",
-      "Fry lardons in a dry pan until golden. Add sliced onions and cook 8 min until soft. Pour in wine and let it reduce by half.",
-      "Layer half the potatoes in the dish, season, then spread the lardon and onion mixture over. Top with remaining potatoes.",
-      "Cut reblochon in half horizontally and lay both halves rind-side up over the potatoes.",
-      "Bake 25 min until the cheese is bubbling and golden. Rest 5 min before serving."
+      "Éplucher et couper les pommes de terre en rondelles de 5mm. Les faire cuire 10 min dans de l'eau salée jusqu'à ce qu'elles soient juste tendres, puis égoutter.",
+      "Préchauffer le four à 190°C. Frotter un plat à gratin avec la gousse d'ail coupée, puis le beurrer.",
+      "Faire revenir les lardons à sec jusqu'à ce qu'ils soient dorés. Ajouter les oignons émincés et cuire 8 min. Verser le vin blanc et laisser réduire de moitié.",
+      "Disposer la moitié des pommes de terre dans le plat, assaisonner, puis répartir les lardons et oignons. Couvrir avec le reste des pommes de terre.",
+      "Couper le reblochon en deux dans l'épaisseur et le poser croûte vers le haut sur les pommes de terre.",
+      "Enfourner 25 min jusqu'à ce que le fromage soit bien doré et bouillonnant. Laisser reposer 5 min avant de servir."
     ]
   },
   {
