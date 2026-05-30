@@ -4,8 +4,8 @@
   "description": "Recipe helper",
   "start_url": "/",
   "display": "standalone",
-  "background_color": "#fafaf8",
-  "theme_color": "#1a1a1a",
+  "background_color": "#041C32",
+  "theme_color": "#041C32",
   "icons": [
     {
       "src": "/icon-192.png",
