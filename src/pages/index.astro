@@ -28,12 +28,32 @@ import recipes from '../data/recipes.json';
     return pool[Math.floor(Math.random() * pool.length)];
   }
 
-  function makeTile(r) {
-    const a = document.createElement('a');
-    a.className = 'tile';
-    a.href = `/recipes/${r.slug}`;
-    a.textContent = r.title;
-    return a;
+  function makeTile(r, index) {
+    const div = document.createElement('div');
+    div.className = 'tile';
+
+    const body = document.createElement('button');
+    body.className = 'tile-body';
+    body.textContent = r.title;
+    body.addEventListener('click', () => rerollOne(index));
+
+    const link = document.createElement('a');
+    link.className = 'tile-open';
+    link.href = `/recipes/${r.slug}`;
+    link.textContent = '›';
+
+    div.appendChild(body);
+    div.appendChild(link);
+    return div;
+  }
+
+  function rerollOne(index) {
+    const r = pickOne(picked.map(p => p.slug));
+    picked[index] = r;
+    const tiles = gridEl.querySelectorAll('.tile');
+    const tile = tiles[index];
+    tile.querySelector('.tile-body').textContent = r.title;
+    tile.querySelector('.tile-open').href = `/recipes/${r.slug}`;
   }
 
   function setGrid() {
@@ -48,7 +68,7 @@ import recipes from '../data/recipes.json';
       picked.push(r);
     }
     gridEl.innerHTML = '';
-    picked.forEach(r => gridEl.appendChild(makeTile(r)));
+    picked.forEach((r, i) => gridEl.appendChild(makeTile(r, i)));
     setGrid();
   }
 
@@ -59,7 +79,7 @@ import recipes from '../data/recipes.json';
       for (let i = prev; i < count; i++) {
         const r = pickOne(picked.map(p => p.slug));
         picked.push(r);
-        gridEl.appendChild(makeTile(r));
+        gridEl.appendChild(makeTile(r, picked.length - 1));
       }
     } else {
       for (let i = prev; i > count; i--) {
@@ -93,18 +113,43 @@ import recipes from '../data/recipes.json';
 
   :global(.tile) {
     display: flex;
-    align-items: center;
-    justify-content: center;
     height: calc(100svh / 3);
     background: var(--surface);
     border: 1px solid var(--border);
     border-radius: var(--radius);
-    font-size: 1.25rem;
+    overflow: hidden;
+  }
+
+  :global(.tile-body) {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    font-size: 1.1rem;
     font-weight: 700;
     text-align: center;
-    padding: 1.5rem;
-    text-decoration: none;
     color: var(--accent);
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+
+  :global(.tile-open) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 3rem;
+    font-size: 1.5rem;
+    color: var(--muted);
+    text-decoration: none;
+    border-left: 1px solid var(--border);
+    flex-shrink: 0;
+  }
+
+  :global(.tile-open:active),
+  :global(.tile-body:active) {
+    background: var(--muted);
   }
 
   .bottom {
