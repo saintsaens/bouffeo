@@ -3,19 +3,12 @@ import Base from '../layouts/Base.astro';
 import recipes from '../data/recipes.json';
 ---
 <Base title="Recipes">
-  <nav>
-    <span class="title">🍳 Bouffeo</span>
-  </nav>
   <main>
     <ul class="list">
       {recipes.map(r => (
         <li>
           <a href={`/recipes/${r.slug}`} class="card">
-            <div class="card-body">
-              <h2>{r.title}</h2>
-              <p class="meta">{r.duration} · {r.servings} serving{r.servings > 1 ? 's' : ''}</p>
-              <p class="tags">{r.tags.map(t => `#${t}`).join(' ')}</p>
-            </div>
+            <span>{r.title}</span>
             <span class="arrow">›</span>
           </a>
         </li>
@@ -35,30 +28,14 @@ import recipes from '../data/recipes.json';
   .card {
     display: flex;
     align-items: center;
-    gap: 1rem;
+    justify-content: space-between;
     background: var(--surface);
     border: 1px solid var(--border);
     border-radius: var(--radius);
     padding: 1rem;
-  }
-
-  .card-body { flex: 1; }
-
-  .card h2 {
     font-size: 1.1rem;
     font-weight: 600;
-    margin-bottom: 0.2rem;
-  }
-
-  .meta {
-    font-size: 0.85rem;
-    color: var(--muted);
-    margin-bottom: 0.25rem;
-  }
-
-  .tags {
-    font-size: 0.8rem;
-    color: var(--accent);
+    text-decoration: none;
   }
 
   .arrow {
