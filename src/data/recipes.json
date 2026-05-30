@@ -80,6 +80,27 @@
     ]
   },
   {
+    "slug": "filet-mignon-miel",
+    "title": "Filet Mignon au Miel",
+    "servings": 4,
+    "ingredients": [
+      { "amount": "600g", "name": "filet mignon de porc" },
+      { "amount": "2", "name": "oignons" },
+      { "amount": "5 c. à soupe", "name": "miel liquide" },
+      { "amount": "6cl", "name": "vinaigre balsamique" },
+      { "amount": "2 c. à soupe", "name": "sauce soja" },
+      { "amount": "30g", "name": "beurre" },
+      { "amount": "1 c. à soupe", "name": "huile d'olive" }
+    ],
+    "steps": [
+      "Émincer les oignons. Les faire dorer dans la cocotte avec l'huile et le beurre.",
+      "Couper le filet mignon en cubes. Les ajouter et faire dorer à feu moyen.",
+      "Ajouter le miel, le vinaigre balsamique et la sauce soja. Laisser caraméliser 5 min. Saler, poivrer.",
+      "Couvrir et laisser mijoter 25 à 30 min à feu doux.",
+      "Servir chaud avec du riz ou des pommes de terre grenailles."
+    ]
+  },
+  {
     "slug": "salade-endives-betterave-comte",
     "title": "Salade Endives Betterave Comté",
     "servings": 2,
