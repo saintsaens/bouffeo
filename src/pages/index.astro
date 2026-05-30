@@ -6,7 +6,6 @@ import recipes from '../data/recipes.json';
   <main>
     <div id="grid" class="grid"></div>
     <div class="bottom">
-      <button id="reroll">Reroll</button>
       <div class="selector">
         <button id="prev" aria-label="fewer">⬅</button>
         <span id="count">1</span>
@@ -90,7 +89,6 @@ import recipes from '../data/recipes.json';
     setGrid();
   }
 
-  document.getElementById('reroll').addEventListener('click', reroll);
   document.getElementById('prev').addEventListener('click', () => { if (count > 1) setCount(count - 1); });
   document.getElementById('next').addEventListener('click', () => { if (count < 4) setCount(count + 1); });
 
@@ -157,26 +155,7 @@ import recipes from '../data/recipes.json';
     bottom: 1.5rem;
     left: 1.5rem;
     right: 1.5rem;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 1rem;
   }
-
-  button {
-    padding: 0.75rem 1.25rem;
-    background: var(--surface);
-    border: 1px solid var(--border);
-    border-radius: var(--radius);
-    color: var(--text);
-    font-size: 1rem;
-    font-weight: 600;
-    cursor: pointer;
-  }
-
-  button:active { background: var(--muted); }
-
-  #reroll { flex: 1; }
 
   .selector {
     display: flex;
@@ -184,11 +163,24 @@ import recipes from '../data/recipes.json';
     gap: 0.75rem;
   }
 
+  .selector button {
+    flex: 1;
+    padding: 1.25rem;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    color: var(--text);
+    font-size: 1.25rem;
+    cursor: pointer;
+  }
+
+  .selector button:active { background: var(--muted); }
+
   #count {
     font-size: 1rem;
     font-weight: 700;
     color: var(--text);
-    min-width: 1ch;
+    min-width: 2ch;
     text-align: center;
   }
 </style>
