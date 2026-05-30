@@ -4,42 +4,66 @@ import recipes from '../data/recipes.json';
 ---
 <Base title="Recipes">
   <main>
-    <ul class="list">
-      {recipes.map(r => (
-        <li>
-          <a href={`/recipes/${r.slug}`} class="card">
-            <span>{r.title}</span>
-            <span class="arrow">›</span>
-          </a>
-        </li>
-      ))}
-    </ul>
+    <a id="tile" class="tile" href="">
+      <span id="title"></span>
+    </a>
+    <button id="reroll">Reroll</button>
   </main>
 </Base>
 
-<style>
-  .list {
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-    gap: 0.75rem;
+<script define:vars={{ recipes }}>
+  const tile = document.getElementById('tile');
+  const titleEl = document.getElementById('title');
+  let current = -1;
+
+  function pick() {
+    let next;
+    do { next = Math.floor(Math.random() * recipes.length); } while (next === current && recipes.length > 1);
+    current = next;
+    const r = recipes[current];
+    titleEl.textContent = r.title;
+    tile.href = `/recipes/${r.slug}`;
   }
 
-  .card {
+  pick();
+  document.getElementById('reroll').addEventListener('click', pick);
+</script>
+
+<style>
+  main {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 1rem;
+  }
+
+  .tile {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
+    height: 50dvh;
     background: var(--surface);
     border: 1px solid var(--border);
     border-radius: var(--radius);
-    padding: 1rem;
-    font-size: 1.1rem;
-    font-weight: 600;
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-align: center;
+    padding: 1.5rem;
     text-decoration: none;
   }
 
-  .arrow {
-    font-size: 1.5rem;
-    color: var(--muted);
+  button {
+    padding: 0.875rem;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    color: var(--text);
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+  }
+
+  button:active {
+    background: var(--muted);
   }
 </style>
