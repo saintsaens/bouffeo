@@ -4,58 +4,98 @@ import recipes from '../data/recipes.json';
 ---
 <Base title="Recipes">
   <main>
-    <a id="tile" class="tile" href="">
-      <span id="title"></span>
-    </a>
-    <button id="reroll">Reroll</button>
+    <div id="grid" class="grid"></div>
+    <div class="bottom">
+      <button id="reroll">Reroll</button>
+      <div class="selector">
+        <button id="prev" aria-label="fewer">⬅</button>
+        <span id="count">1</span>
+        <button id="next" aria-label="more">➡</button>
+      </div>
+    </div>
   </main>
 </Base>
 
 <script define:vars={{ recipes }}>
-  const tile = document.getElementById('tile');
-  const titleEl = document.getElementById('title');
-  let current = -1;
+  const gridEl = document.getElementById('grid');
+  const countEl = document.getElementById('count');
+  let count = 1;
+  let picked = [];
 
-  function pick() {
-    let next;
-    do { next = Math.floor(Math.random() * recipes.length); } while (next === current && recipes.length > 1);
-    current = next;
-    const r = recipes[current];
-    titleEl.textContent = r.title;
-    tile.href = `/recipes/${r.slug}`;
+  function pickUnique(n) {
+    const pool = [...recipes];
+    const result = [];
+    for (let i = 0; i < Math.min(n, pool.length); i++) {
+      const idx = Math.floor(Math.random() * pool.length);
+      result.push(pool.splice(idx, 1)[0]);
+    }
+    return result;
   }
 
-  pick();
-  document.getElementById('reroll').addEventListener('click', pick);
+  function render() {
+    picked = pickUnique(count);
+    gridEl.innerHTML = '';
+    gridEl.style.gridTemplateColumns = count === 1 ? '1fr' : '1fr 1fr';
+    picked.forEach(r => {
+      const a = document.createElement('a');
+      a.className = 'tile';
+      a.href = `/recipes/${r.slug}`;
+      a.textContent = r.title;
+      gridEl.appendChild(a);
+    });
+    countEl.textContent = count;
+  }
+
+  document.getElementById('reroll').addEventListener('click', render);
+  document.getElementById('prev').addEventListener('click', () => { if (count > 1) { count--; render(); } });
+  document.getElementById('next').addEventListener('click', () => { if (count < 4) { count++; render(); } });
+
+  render();
 </script>
 
 <style>
   main {
     display: flex;
     flex-direction: column;
-    align-items: stretch;
-    gap: 1.5rem;
+    height: 100dvh;
     padding: 1.5rem;
+    gap: 1.5rem;
+    box-sizing: border-box;
+  }
+
+  .grid {
+    flex: 1;
+    display: grid;
+    gap: 1rem;
+    min-height: 0;
   }
 
   .tile {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 50dvh;
     background: var(--surface);
     border: 1px solid var(--border);
     border-radius: var(--radius);
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     font-weight: 700;
     text-align: center;
-    padding: 2rem;
+    padding: 1.5rem;
     text-decoration: none;
     color: var(--accent);
+    min-height: 0;
+  }
+
+  .bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    flex-shrink: 0;
   }
 
   button {
-    padding: 1rem;
+    padding: 0.75rem 1.25rem;
     background: var(--surface);
     border: 1px solid var(--border);
     border-radius: var(--radius);
@@ -65,7 +105,21 @@ import recipes from '../data/recipes.json';
     cursor: pointer;
   }
 
-  button:active {
-    background: var(--muted);
+  button:active { background: var(--muted); }
+
+  #reroll { flex: 1; }
+
+  .selector {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+  }
+
+  #count {
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--text);
+    min-width: 1ch;
+    text-align: center;
   }
 </style>
