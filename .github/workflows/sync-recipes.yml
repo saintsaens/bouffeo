@@ -4,6 +4,9 @@ on:
   workflow_dispatch:       # manual trigger from GitHub UI
   repository_dispatch:     # trigger via GitHub API (POST /repos/saintsaens/bouffeo/dispatches)
 
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+
 jobs:
   sync:
     runs-on: ubuntu-latest
