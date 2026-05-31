@@ -1,5 +1,65 @@
 [
   {
+    "slug": "roti-de-porc-haricots",
+    "title": "Rôti de porc haricots",
+    "servings": 4,
+    "ingredients": [
+      {
+        "amount": "800",
+        "name": "Haricots verts (g)"
+      },
+      {
+        "amount": "1000",
+        "name": "Rôti de porc (g)"
+      }
+    ],
+    "steps": [
+      "Rôti au four (200 degrés) pendant 50 min.",
+      "Haricots 7 min eau bouillante, puis poêle."
+    ]
+  },
+  {
+    "slug": "croques-monsieurs",
+    "title": "Croques-monsieurs",
+    "servings": 6,
+    "ingredients": [
+      {
+        "amount": "300",
+        "name": "Gruyère râpé (g)"
+      },
+      {
+        "amount": "12",
+        "name": "Toastinettes"
+      },
+      {
+        "amount": "400",
+        "name": "Lait (ml)"
+      },
+      {
+        "amount": "40",
+        "name": "Farine (g)"
+      },
+      {
+        "amount": "1",
+        "name": "Pain de mie"
+      },
+      {
+        "amount": "40",
+        "name": "Beurre (g)"
+      },
+      {
+        "amount": "6",
+        "name": "Jambon blanc (tranches)"
+      }
+    ],
+    "steps": [
+      "Faire la béchamel",
+      "Sur chaque tranche du bas : béchamel, jambon, toastinette",
+      "Sur chaque tranche du haut : béchamel des 2 côtés, et gruyère au dessus.",
+      "Au grill."
+    ]
+  },
+  {
     "slug": "bucatini-all-amatriciana",
     "title": "Bucatini all’amatriciana",
     "servings": 4,
@@ -9,16 +69,8 @@
         "name": "Vin rouge pécoleux"
       },
       {
-        "amount": "2",
-        "name": "Courgettes"
-      },
-      {
         "amount": "750",
         "name": "Pulpe de tomate (g)"
-      },
-      {
-        "amount": "20",
-        "name": "Crème (cl)"
       },
       {
         "amount": "400",
