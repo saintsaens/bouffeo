@@ -130,11 +130,12 @@ import recipes from '../data/recipes.json';
       lines.push(`${amountStr} ${name}`);
     }
 
-    sheetList.title = 'Copier tout';
+    sheetList.title = 'Copier et ouvrir Todoist';
     sheetList.onclick = () => {
       navigator.clipboard.writeText(lines.join('\n')).then(() => {
         sheetList.classList.add('copied');
         setTimeout(() => sheetList.classList.remove('copied'), 1500);
+        window.location.href = 'todoist://';
       });
     };
 
