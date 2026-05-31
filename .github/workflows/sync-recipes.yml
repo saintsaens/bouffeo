@@ -1,9 +1,8 @@
 name: Sync recipes from Notion
 
 on:
-  schedule:
-    - cron: '0 6 * * *'  # every day at 6am UTC
   workflow_dispatch:       # manual trigger from GitHub UI
+  repository_dispatch:     # trigger via GitHub API (POST /repos/saintsaens/bouffeo/dispatches)
 
 jobs:
   sync:
