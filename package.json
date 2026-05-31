@@ -5,9 +5,11 @@
   "scripts": {
     "dev": "astro dev",
     "build": "astro build",
-    "preview": "astro preview"
+    "preview": "astro preview",
+    "fetch-recipes": "node scripts/fetch-recipes.mjs"
   },
   "dependencies": {
+    "@notionhq/client": "^2.3.0",
     "astro": "^5.8.0"
   }
 }

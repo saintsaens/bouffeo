@@ -1,122 +1,180 @@
 [
   {
-    "slug": "pate-poivron-poulet",
-    "title": "Pâtes Poivron Poulet",
+    "slug": "bucatini-all-amatriciana",
+    "title": "Bucatini all’amatriciana",
     "servings": 4,
     "ingredients": [
-      { "amount": "400g", "name": "pâtes" },
-      { "amount": "2", "name": "filets de poulet" },
-      { "amount": "2", "name": "poivrons (rouge et jaune)" },
-      { "amount": "200ml", "name": "crème fraîche" },
-      { "amount": "1", "name": "oignon" },
-      { "amount": "2 gousses", "name": "ail" }
+      {
+        "amount": "1",
+        "name": "Vin rouge pécoleux"
+      },
+      {
+        "amount": "2",
+        "name": "Courgettes"
+      },
+      {
+        "amount": "750",
+        "name": "Pulpe de tomate (g)"
+      },
+      {
+        "amount": "20",
+        "name": "Crème (cl)"
+      },
+      {
+        "amount": "400",
+        "name": "Bucatini (g)"
+      },
+      {
+        "amount": "500",
+        "name": "Lardons (g)"
+      }
+    ],
+    "steps": [
+      "Faire cuire les oignons et les lardons.",
+      "Ajouter la pulpe de tomate.",
+      "Attendre que ça réduise.",
+      "Cuire les pâtes.",
+      "Tout mettre dans une cocotte."
+    ]
+  },
+  {
+    "slug": "pates-courgettes-saucisse",
+    "title": "Pâtes courgettes saucisse",
+    "servings": 4,
+    "ingredients": [
+      {
+        "amount": "20",
+        "name": "Crème (cl)"
+      },
+      {
+        "amount": "400",
+        "name": "Pâtes (g)"
+      },
+      {
+        "amount": "6",
+        "name": "Saucisses"
+      },
+      {
+        "amount": "1",
+        "name": "Oignons jaunes"
+      },
+      {
+        "amount": "2",
+        "name": "Courgettes"
+      }
+    ],
+    "steps": [
+      "Cuire les oignons et les courgettes.",
+      "Cuire les pâtes.",
+      "Mettre tout dans une cocotte."
+    ]
+  },
+  {
+    "slug": "pates-raclette-champi",
+    "title": "Pâtes raclette champi",
+    "servings": 4,
+    "ingredients": [
+      {
+        "amount": "200",
+        "name": "Champis (g)"
+      },
+      {
+        "amount": "400",
+        "name": "Pâtes (g)"
+      },
+      {
+        "amount": "400",
+        "name": "Raclette (g)"
+      },
+      {
+        "amount": "1",
+        "name": "Oignons jaunes"
+      }
+    ],
+    "steps": [
+      "Cuire les oignons et les champis.",
+      "Cuire les pâtes.",
+      "Mettre tout dans une cocotte.",
+      "Rajouter la raclette."
+    ]
+  },
+  {
+    "slug": "pates-poivrons-poulet",
+    "title": "Pâtes poivrons poulet",
+    "servings": 4,
+    "ingredients": [
+      {
+        "amount": "2",
+        "name": "Poivrons"
+      },
+      {
+        "amount": "1",
+        "name": "Oignons jaunes"
+      },
+      {
+        "amount": "400",
+        "name": "Pâtes (g)"
+      },
+      {
+        "amount": "20",
+        "name": "Crème (cl)"
+      },
+      {
+        "amount": "2",
+        "name": "Filets de poulet"
+      }
     ],
     "steps": [
       "Cuire le poulet dans une poêle. Réserver.",
       "Cuire l'oignon, l'ail et les poivrons dans la poêle du poulet.",
       "Ajouter la crème, puis remettre le poulet.",
-      "Cuire les pâtes.",
-      "Mettre les pâtes dans la sauce."
+      "Cuire les pâtes",
+      "Mettre les pâtes dans la sauce"
     ]
   },
   {
-    "slug": "tartiflette",
-    "title": "Tartiflette",
+    "slug": "tarte-poireaux-champis",
+    "title": "Tarte poireaux champis",
     "servings": 4,
     "ingredients": [
-      { "amount": "1.2kg", "name": "pommes de terre à chair ferme" },
-      { "amount": "1", "name": "reblochon (450g)" },
-      { "amount": "200g", "name": "lardons" },
-      { "amount": "2", "name": "oignons" },
-      { "amount": "150ml", "name": "vin blanc sec" },
-      { "amount": "1 gousse", "name": "ail" },
-      { "amount": "1 c. à soupe", "name": "beurre" }
+      {
+        "amount": "200",
+        "name": "Gruyère râpé (g)"
+      },
+      {
+        "amount": "2",
+        "name": "Oeufs"
+      },
+      {
+        "amount": "25",
+        "name": "Crème (cl)"
+      },
+      {
+        "amount": "100",
+        "name": "Champis (g)"
+      },
+      {
+        "amount": "500",
+        "name": "Lardons (g)"
+      },
+      {
+        "amount": "1",
+        "name": "Oignons jaunes"
+      },
+      {
+        "amount": "1",
+        "name": "Pâte brisée"
+      },
+      {
+        "amount": "1",
+        "name": "Poireaux"
+      }
     ],
     "steps": [
-      "Couper les pommes de terre en rondelles. Cuire 10 min à l'eau salée. Égoutter.",
-      "Faire revenir les lardons. Ajouter les oignons et le vin blanc. Laisser réduire.",
-      "Frotter un plat à gratin avec l'ail. Alterner couches de pommes de terre et de lardons.",
-      "Poser le reblochon coupé en deux, croûte vers le haut.",
-      "Enfourner à 190°C pendant 25 min. Laisser reposer avant de servir."
-    ]
-  },
-  {
-    "slug": "camembert-roti",
-    "title": "Camembert Rôti",
-    "servings": 2,
-    "ingredients": [
-      { "amount": "1", "name": "camembert dans sa boîte" },
-      { "amount": "1 gousse", "name": "ail" },
-      { "amount": "quelques branches", "name": "thym frais" },
-      { "amount": "1 filet", "name": "miel" },
-      { "amount": "à volonté", "name": "pain ou pommes de terre" }
-    ],
-    "steps": [
-      "Préchauffer le four à 200°C.",
-      "Retirer l'emballage plastique et remettre le camembert dans sa boîte en bois.",
-      "Quadriller le dessus au couteau. Glisser des lamelles d'ail et du thym dans les entailles.",
-      "Arroser d'un filet de miel.",
-      "Enfourner 15 min jusqu'à ce que le fromage soit fondu. Servir directement avec du pain."
-    ]
-  },
-  {
-    "slug": "croque-monsieur",
-    "title": "Croque Monsieur",
-    "servings": 2,
-    "ingredients": [
-      { "amount": "4 tranches", "name": "pain de mie" },
-      { "amount": "4 tranches", "name": "jambon blanc" },
-      { "amount": "100g", "name": "gruyère râpé" },
-      { "amount": "20g", "name": "beurre" },
-      { "amount": "20g", "name": "farine" },
-      { "amount": "200ml", "name": "lait" }
-    ],
-    "steps": [
-      "Faire un roux : fondre le beurre, ajouter la farine, puis le lait en fouettant. Cuire 3 min jusqu'à épaississement.",
-      "Toaster légèrement les tranches de pain.",
-      "Tartiner une face de béchamel, poser le jambon, couvrir de l'autre tranche.",
-      "Napper le dessus de béchamel et parsemer de gruyère.",
-      "Passer sous le gril 5 min jusqu'à ce que le dessus soit doré et bouillonnant."
-    ]
-  },
-  {
-    "slug": "filet-mignon-miel",
-    "title": "Filet Mignon au Miel",
-    "servings": 4,
-    "ingredients": [
-      { "amount": "600g", "name": "filet mignon de porc" },
-      { "amount": "2", "name": "oignons" },
-      { "amount": "5 c. à soupe", "name": "miel liquide" },
-      { "amount": "6cl", "name": "vinaigre balsamique" },
-      { "amount": "2 c. à soupe", "name": "sauce soja" },
-      { "amount": "30g", "name": "beurre" },
-      { "amount": "1 c. à soupe", "name": "huile d'olive" }
-    ],
-    "steps": [
-      "Émincer les oignons. Les faire dorer dans la cocotte avec l'huile et le beurre.",
-      "Couper le filet mignon en cubes. Les ajouter et faire dorer à feu moyen.",
-      "Ajouter le miel, le vinaigre balsamique et la sauce soja. Laisser caraméliser 5 min. Saler, poivrer.",
-      "Couvrir et laisser mijoter 25 à 30 min à feu doux.",
-      "Servir chaud avec du riz ou des pommes de terre grenailles."
-    ]
-  },
-  {
-    "slug": "salade-endives-betterave-comte",
-    "title": "Salade Endives Betterave Comté",
-    "servings": 2,
-    "ingredients": [
-      { "amount": "2", "name": "endives" },
-      { "amount": "2", "name": "betteraves cuites" },
-      { "amount": "80g", "name": "comté" },
-      { "amount": "2 tranches", "name": "jambon de pays" },
-      { "amount": "2 c. à soupe", "name": "huile de noix" },
-      { "amount": "1 c. à soupe", "name": "vinaigre de cidre" }
-    ],
-    "steps": [
-      "Couper les endives en lamelles, les betteraves en dés, le comté en copeaux.",
-      "Déchirer le jambon de pays en morceaux.",
-      "Mélanger huile de noix, vinaigre, sel et poivre pour la vinaigrette.",
-      "Assembler le tout dans un saladier et arroser de vinaigrette."
+      "Préchauffer le four à 220°C",
+      "Dans une poêle , faire revenir dans l’ordre :",
+      "Étaler la pâte dans un plat à tarte et la piquer.",
+      "Appariel : battre les oeufs, puis ajouter la crème et assaisonner avec les épices (poivre, sel, paprika, muscade)."
     ]
   }
 ]
