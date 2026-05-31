@@ -1,5 +1,34 @@
 [
   {
+    "slug": "filet-mignon-patates",
+    "title": "Filet mignon patates",
+    "servings": 4,
+    "ingredients": [
+      {
+        "amount": "5",
+        "name": "Miel (c à soupe)"
+      },
+      {
+        "amount": "2",
+        "name": "Oignons jaunes"
+      },
+      {
+        "amount": "900",
+        "name": "Filet mignon (g)"
+      },
+      {
+        "amount": "900",
+        "name": "Patates (g)"
+      }
+    ],
+    "steps": [
+      "Oignons, beurre et huile d’olive dans cocotte.",
+      "Ajouter filet mignon, puis miel, vinaigre balsamique et sauce soja.",
+      "Laisser mijoter 30 min.",
+      "Cuire les patates."
+    ]
+  },
+  {
     "slug": "roti-de-porc-haricots",
     "title": "Rôti de porc haricots",
     "servings": 4,
