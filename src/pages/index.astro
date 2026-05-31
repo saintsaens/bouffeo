@@ -327,33 +327,31 @@ import recipes from '../data/recipes.json';
     list-style: none;
     display: flex;
     flex-direction: column;
-    gap: 0.6rem;
-  }
-
-  .sheet-list {
+    gap: 0.4rem;
     cursor: pointer;
+    border: 1px dashed var(--border);
     border-radius: 8px;
+    padding: 0.75rem;
     transition: opacity 0.15s;
   }
 
   .sheet-list:active { opacity: 0.6; }
 
-  .sheet-list.copied { opacity: 0.6; }
+  :global(.sheet-list.copied) { opacity: 0.6; }
 
-  .sheet-list li {
+  :global(.sheet-list li) {
     display: flex;
     gap: 0.75rem;
     align-items: baseline;
-    padding: 0.35rem 0;
   }
 
-  .s-amount {
+  :global(.s-amount) {
     font-size: 0.85rem;
     color: var(--muted);
     min-width: 50px;
   }
 
-  .s-name {
+  :global(.s-name) {
     font-size: 1rem;
     color: var(--text);
   }
