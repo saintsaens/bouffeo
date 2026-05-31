@@ -4,18 +4,15 @@ on:
   workflow_dispatch:       # manual trigger from GitHub UI
   repository_dispatch:     # trigger via GitHub API (POST /repos/saintsaens/bouffeo/dispatches)
 
-env:
-  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
-
 jobs:
   sync:
     runs-on: ubuntu-latest
     permissions:
       contents: write
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v6
 
-      - uses: actions/setup-node@v4
+      - uses: actions/setup-node@v6
         with:
           node-version: 20
 
