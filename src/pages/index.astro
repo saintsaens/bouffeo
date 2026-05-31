@@ -6,11 +6,21 @@ import recipes from '../data/recipes.json';
   <main>
     <div id="grid" class="grid"></div>
     <div class="bottom">
+      <button id="ingredients-btn">Voir les ingrédients</button>
       <div class="selector">
         <button id="prev" aria-label="fewer">⬅</button>
         <span id="count">1</span>
         <button id="next" aria-label="more">➡</button>
       </div>
+    </div>
+
+    <div id="sheet-backdrop" class="sheet-backdrop" hidden></div>
+    <div id="sheet" class="sheet" hidden aria-modal="true" role="dialog">
+      <div class="sheet-header">
+        <span class="sheet-title">Ingrédients</span>
+        <button id="sheet-close" aria-label="Fermer">✕</button>
+      </div>
+      <ul id="sheet-list" class="sheet-list"></ul>
     </div>
   </main>
 </Base>
@@ -92,6 +102,53 @@ import recipes from '../data/recipes.json';
   document.getElementById('prev').addEventListener('click', () => { if (count > 1) setCount(count - 1); });
   document.getElementById('next').addEventListener('click', () => { if (count < 4) setCount(count + 1); });
 
+  const sheet = document.getElementById('sheet');
+  const backdrop = document.getElementById('sheet-backdrop');
+  const sheetList = document.getElementById('sheet-list');
+
+  function openSheet() {
+    const totals = new Map();
+    for (const recipe of picked) {
+      for (const ing of recipe.ingredients) {
+        const key = ing.name.toLowerCase();
+        const qty = parseFloat(ing.amount) || 0;
+        if (totals.has(key)) {
+          totals.get(key).amount += qty;
+        } else {
+          totals.set(key, { name: ing.name, amount: qty });
+        }
+      }
+    }
+
+    sheetList.innerHTML = '';
+    for (const { name, amount } of totals.values()) {
+      const li = document.createElement('li');
+      const amountStr = Number.isInteger(amount) ? String(amount) : amount.toFixed(1).replace(/\.0$/, '');
+      li.innerHTML = `<span class="s-amount">${amountStr}</span><span class="s-name">${name}</span>`;
+      sheetList.appendChild(li);
+    }
+
+    sheet.hidden = false;
+    backdrop.hidden = false;
+    requestAnimationFrame(() => {
+      sheet.classList.add('open');
+      backdrop.classList.add('open');
+    });
+  }
+
+  function closeSheet() {
+    sheet.classList.remove('open');
+    backdrop.classList.remove('open');
+    sheet.addEventListener('transitionend', () => {
+      sheet.hidden = true;
+      backdrop.hidden = true;
+    }, { once: true });
+  }
+
+  document.getElementById('ingredients-btn').addEventListener('click', openSheet);
+  document.getElementById('sheet-close').addEventListener('click', closeSheet);
+  backdrop.addEventListener('click', closeSheet);
+
   reroll();
 </script>
 
@@ -155,7 +212,24 @@ import recipes from '../data/recipes.json';
     bottom: 1.5rem;
     left: 1.5rem;
     right: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
   }
+
+  #ingredients-btn {
+    width: 100%;
+    padding: 1rem;
+    background: var(--accent);
+    color: var(--bg);
+    border: none;
+    border-radius: var(--radius);
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+  }
+
+  #ingredients-btn:active { opacity: 0.85; }
 
   .selector {
     display: flex;
@@ -182,5 +256,84 @@ import recipes from '../data/recipes.json';
     color: var(--text);
     min-width: 2ch;
     text-align: center;
+  }
+
+  .sheet-backdrop {
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.5);
+    opacity: 0;
+    transition: opacity 0.25s;
+    z-index: 20;
+  }
+
+  .sheet-backdrop.open { opacity: 1; }
+
+  .sheet {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    max-width: 480px;
+    margin: 0 auto;
+    background: var(--surface);
+    border-top: 1px solid var(--border);
+    border-radius: var(--radius) var(--radius) 0 0;
+    padding: 1.25rem 1.5rem 2.5rem;
+    transform: translateY(100%);
+    transition: transform 0.3s ease;
+    z-index: 30;
+    max-height: 80svh;
+    overflow-y: auto;
+  }
+
+  .sheet.open { transform: translateY(0); }
+
+  .sheet-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1.25rem;
+  }
+
+  .sheet-title {
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--muted);
+  }
+
+  #sheet-close {
+    background: none;
+    border: none;
+    color: var(--muted);
+    font-size: 1.1rem;
+    cursor: pointer;
+    padding: 0.25rem;
+  }
+
+  .sheet-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+  }
+
+  .sheet-list li {
+    display: flex;
+    gap: 0.75rem;
+    align-items: baseline;
+  }
+
+  .s-amount {
+    font-size: 0.85rem;
+    color: var(--muted);
+    min-width: 50px;
+  }
+
+  .s-name {
+    font-size: 1rem;
+    color: var(--text);
   }
 </style>
