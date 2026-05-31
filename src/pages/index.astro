@@ -121,20 +121,22 @@ import recipes from '../data/recipes.json';
     }
 
     sheetList.innerHTML = '';
+    const lines = [];
     for (const { name, amount } of totals.values()) {
       const li = document.createElement('li');
       const amountStr = Number.isInteger(amount) ? String(amount) : amount.toFixed(1).replace(/\.0$/, '');
-      const copyText = `${amountStr} ${name}`;
-      li.innerHTML = `<span class="s-amount">${amountStr}</span><span class="s-name">${name}</span><span class="s-copied" aria-hidden="true">✓</span>`;
-      li.title = 'Copier';
-      li.addEventListener('click', () => {
-        navigator.clipboard.writeText(copyText).then(() => {
-          li.classList.add('copied');
-          setTimeout(() => li.classList.remove('copied'), 1500);
-        });
-      });
+      li.innerHTML = `<span class="s-amount">${amountStr}</span><span class="s-name">${name}</span>`;
       sheetList.appendChild(li);
+      lines.push(`${amountStr} ${name}`);
     }
+
+    sheetList.title = 'Copier tout';
+    sheetList.onclick = () => {
+      navigator.clipboard.writeText(lines.join('\n')).then(() => {
+        sheetList.classList.add('copied');
+        setTimeout(() => sheetList.classList.remove('copied'), 1500);
+      });
+    };
 
     sheet.hidden = false;
     backdrop.hidden = false;
@@ -328,17 +330,22 @@ import recipes from '../data/recipes.json';
     gap: 0.6rem;
   }
 
+  .sheet-list {
+    cursor: pointer;
+    border-radius: 8px;
+    transition: opacity 0.15s;
+  }
+
+  .sheet-list:active { opacity: 0.6; }
+
+  .sheet-list.copied { opacity: 0.6; }
+
   .sheet-list li {
     display: flex;
     gap: 0.75rem;
     align-items: baseline;
-    padding: 0.5rem 0.25rem;
-    border-radius: 8px;
-    cursor: pointer;
-    transition: background 0.15s;
+    padding: 0.35rem 0;
   }
-
-  .sheet-list li:active { background: var(--muted); }
 
   .s-amount {
     font-size: 0.85rem;
@@ -349,15 +356,5 @@ import recipes from '../data/recipes.json';
   .s-name {
     font-size: 1rem;
     color: var(--text);
-    flex: 1;
   }
-
-  .s-copied {
-    font-size: 0.85rem;
-    color: var(--accent);
-    opacity: 0;
-    transition: opacity 0.2s;
-  }
-
-  .sheet-list li.copied .s-copied { opacity: 1; }
 </style>
